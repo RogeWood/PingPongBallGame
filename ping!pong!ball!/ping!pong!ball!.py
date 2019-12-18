@@ -5,6 +5,8 @@ from random import randint
 
 pygame.init()
 screen = pygame.display.set_mode((640,480))
+icon = pygame.image.load("image/icon.png")
+pygame.display.set_icon(icon)
 pygame.display.set_caption("ping!pong!ball!")
 fpsclock = pygame.time.Clock()
 FPS = 60
