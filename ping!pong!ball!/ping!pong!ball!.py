@@ -6,7 +6,8 @@ import Object
 
 #初始設定
 pygame.init() #模組初始化
-screen = pygame.display.set_mode((640,480))
+screenHigh = 600
+screen = pygame.display.set_mode((700,screenHigh))
 icon = pygame.image.load("image/icon.png")
 pygame.display.set_icon(icon)
 pygame.display.set_caption("ping!pong!ball!")
@@ -15,9 +16,9 @@ FPS = 60
 running = True
 
 #擋板變數
-barW = 60
+barW = 90
 barH = 30
-barP = Vector2(200,460)
+barP = Vector2(200,screenHigh-30)
 score = 0
 
 hitBar = False
